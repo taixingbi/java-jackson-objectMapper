@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+//
+//    implementation 'org.springframework.boot:spring-boot-starter-webflux:2.5.4'
+//    implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '4.0.0-RC1'
+//
+    implementation 'org.glassfish.jaxb:jaxb-runtime:3.0.2-b01'
+
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+}
+
+test {
+    useJUnitPlatform()
+}
